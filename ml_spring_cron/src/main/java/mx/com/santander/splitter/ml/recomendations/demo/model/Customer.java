@@ -2,7 +2,6 @@ package mx.com.santander.splitter.ml.recomendations.demo.model;
 
 import lombok.Data;
 
-import java.time.Instant;
 import java.util.List;
 
 import org.springframework.data.annotation.Id;
@@ -22,5 +21,5 @@ public class Customer {
     private List<String> lifeEvents;       // ["pet_owner", "new_job"]
     private List<String> currentProducts;  // ["cuenta_debito", "tarjeta_credito"]
 
-    private Instant createdAt;             // 2024-02-10T14:23:00Z
+    private String createdAt;             // 2024-02-10T14:23:00Z
 }

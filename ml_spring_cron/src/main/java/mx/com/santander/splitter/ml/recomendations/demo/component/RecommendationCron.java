@@ -28,14 +28,16 @@ public class RecommendationCron {
     @Scheduled(cron = "*/5 * * * * *")
     public void runBatch() {
         log.info("Starting batch recommendation generation");
+        log.info("Total customers in DB: {}", customerRepository.count());
         List<Customer> customers = customerRepository.findAll();
         log.info("Found {} customers to process", customers.size());
 
         for (Customer c : customers) {
-            log.debug("Processing customer {}", c.getId());
+            log.info("Processing customer Id {}", c.getId());
+            log.info("Processing customer Name {}", c.getName());
             try {
-                //recommendationService.generateAndSaveRecommendation(c.getId());
-                log.debug("Successfully generated recommendation for customer {}", c.getId());
+                recommendationService.generateAndSaveRecommendation(c.getId());
+                log.info("Successfully generated recommendation for customer {}", c.getId());
             } catch (Exception e) {
                 log.error("Error generating recommendation for {}", c.getId(), e);
             }

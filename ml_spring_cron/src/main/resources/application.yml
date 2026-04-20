@@ -5,6 +5,5 @@ spring:
     web-application-type: "none"
 logging:
   level:
-    root: INFO
-    org.springframework.data.mongodb.core.MongoTemplate: DEBUG
-    org.mongodb.driver: DEBUG
+    root: DEBUG
+    org.springframework: INFO

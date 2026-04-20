@@ -1,5 +1,7 @@
 package mx.com.santander.splitter.ml.recomendations.demo.dto;
 
+import java.util.Map;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -38,4 +40,12 @@ public class Features {
             (float) variabilidad
         };
     }
+
+    public Map<String, Object> toMap() {
+    return Map.of(
+        "gasto_mascotas_mensual", this.getGastoPets(),
+        "veterinario_recurrente", this.getRecurrenciasVet() > 0,
+        "tendencia_3m", this.getTendenciaPets()
+    );
+}
 }

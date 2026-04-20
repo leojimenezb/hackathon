@@ -3,33 +3,30 @@ package mx.com.santander.splitter.ml.recomendations.demo.model;
 import lombok.Data;
 import mx.com.santander.splitter.ml.recomendations.demo.dto.Features;
 
+import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.time.Instant;
 import java.time.LocalDateTime;
+import java.util.Map;
 
 @Data
 @Document(collection = "recommendations")
 public class Recommendation {
 
     @Id
-    private String id; // puedes usar customerId como id
+    private ObjectId _id;  // _id: "rec_001"
+    private String id;  // _id: "rec_001"
 
     private String customerId;
     private String productId;
-    private double score;
+    private String productName;
+
+    private Double score;
     private String reason;
 
-    private LocalDateTime generatedAt;
+    private Map<String, Object> featuresUsed; // objeto dinámico
 
-    // Opcional: guardar features usados (útil para debugging)
-    private Features features;
-
-    public Recommendation(String customerId, String productId, Features features, LocalDateTime generatedAt) {
-        this.id = customerId; // 1 recomendación vigente por usuario
-        this.customerId = customerId;
-        this.productId = productId;
-        this.features = features;
-        this.generatedAt = generatedAt;
-    }
+    private Instant createdAt;
 }

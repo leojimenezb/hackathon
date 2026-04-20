@@ -1,0 +1,44 @@
+[
+    {
+        "id": "rec_customer_67890",
+        "customerId": "customer_67890",
+        "productId": "pet_insurance_basic",
+        "productName": "Seguro de Mascotas",
+        "score": 1.0,
+        "reason": "Tus gastos en mascotas aumentaron y tienes cargos veterinarios recurrentes.",
+        "featuresUsed": {
+            "gasto_mascotas_mensual": 25968.239999999998,
+            "veterinario_recurrente": true,
+            "tendencia_3m": 1.0
+        },
+        "createdAt": 1776669245.219052100
+    },
+    {
+        "id": "rec_customer_67891",
+        "customerId": "customer_67891",
+        "productId": "auto_insurance_basic",
+        "productName": "Seguro de Auto",
+        "score": 1.0,
+        "reason": "Tu gasto en gasolina es alto y constante.",
+        "featuresUsed": {
+            "gasto_mascotas_mensual": 0.0,
+            "veterinario_recurrente": false,
+            "tendencia_3m": 0.0
+        },
+        "createdAt": 1776669245.396958300
+    },
+    {
+        "id": "rec_customer_67892",
+        "customerId": "customer_67892",
+        "productId": "financial_health_checkup",
+        "productName": "Chequeo de Salud Financiera",
+        "score": 1.0,
+        "reason": "Tu variabilidad de gastos es alta, recomendamos una revisión financiera.",
+        "featuresUsed": {
+            "gasto_mascotas_mensual": 0.0,
+            "veterinario_recurrente": false,
+            "tendencia_3m": 0.0
+        },
+        "createdAt": 1776669245.419220900
+    }
+]
