@@ -4,13 +4,19 @@ import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
+import lombok.extern.slf4j.Slf4j;
 import mx.com.santander.splitter.ml.recomendations.demo.dto.Features;
 import mx.com.santander.splitter.ml.recomendations.demo.dto.Transaction;
 import mx.com.santander.splitter.ml.recomendations.demo.mapper.MccCategoryMapper;
 
+@Component
+@Slf4j
 public class FeatureExtractor {
 
     public Features extract(List<Transaction> transactions) {
+        log.debug("Extracting features from {} transactions", transactions.size());
 
         Features f = new Features();
 
@@ -91,6 +97,7 @@ public class FeatureExtractor {
         f.setTendenciaPets(tendenciaPets);
         f.setVariabilidad(variabilidad);
 
+        log.debug("Features extracted: gastoPets={}, gastoVet={}, variabilidad={}", gastoPets, gastoVet, variabilidad);
         return f;
     }
 }

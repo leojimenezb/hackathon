@@ -1,0 +1,2008 @@
+const database = 'hackathon';
+
+// Create a new database.
+use(database);
+
+db.transacciones.insertMany(
+[
+    {
+        "id": "txn_001",
+        "customerId": "customer_67890",
+        "date": "2026-04-12T00:00:00Z",
+        "amoutn": 1078.66,
+        "currency": "MXN",
+        "description": "Pago en Walmart",
+        "category": "Servicios",
+        "status": "Completado",
+        "paymentMethod": "SPEI",
+        "merchant": "Walmart",
+        "merchantname": "Walmart",
+        "location": {
+            "city": "Puebla",
+            "state": "Puebla",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "servicios",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_0e07979b",
+            "customerId": "customer_67890"
+        },
+        "mcc": "4899",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-14T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 9,
+        "categoryHierarchy": [
+            "Servicios",
+            "Servicios General"
+        ]
+    },
+    {
+        "id": "txn_002",
+        "customerId": "customer_67890",
+        "date": "2026-04-19T00:00:00Z",
+        "amoutn": 809.03,
+        "currency": "MXN",
+        "description": "Pago en The Home Depot",
+        "category": "Farmacia",
+        "status": "Completado",
+        "paymentMethod": "SPEI",
+        "merchant": "The Home Depot",
+        "merchantname": "The Home Depot",
+        "location": {
+            "city": "Ciudad de México",
+            "state": "CDMX",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "farmacia",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_dfa49fef",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5912",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-20T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 21,
+        "categoryHierarchy": [
+            "Farmacia",
+            "Farmacia General"
+        ]
+    },
+    {
+        "id": "txn_003",
+        "customerId": "customer_67890",
+        "date": "2026-04-24T00:00:00Z",
+        "amoutn": 2332.75,
+        "currency": "MXN",
+        "description": "Pago en Costco",
+        "category": "Restaurante",
+        "status": "Completado",
+        "paymentMethod": "SPEI",
+        "merchant": "Costco",
+        "merchantname": "Costco",
+        "location": {
+            "city": "Querétaro",
+            "state": "Querétaro",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "restaurante",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_cfc87040",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5812",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-27T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 26,
+        "categoryHierarchy": [
+            "Restaurante",
+            "Restaurante General"
+        ]
+    },
+    {
+        "id": "txn_004",
+        "customerId": "customer_67890",
+        "date": "2026-04-14T00:00:00Z",
+        "amoutn": 876.04,
+        "currency": "MXN",
+        "description": "Pago en Costco",
+        "category": "Restaurante",
+        "status": "Completado",
+        "paymentMethod": "Transferencia",
+        "merchant": "Costco",
+        "merchantname": "Costco",
+        "location": {
+            "city": "Ciudad de México",
+            "state": "CDMX",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "restaurante",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_31f9e832",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5812",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-15T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 10,
+        "categoryHierarchy": [
+            "Restaurante",
+            "Restaurante General"
+        ]
+    },
+    {
+        "id": "txn_005",
+        "customerId": "customer_67890",
+        "date": "2026-04-15T00:00:00Z",
+        "amoutn": 1293.36,
+        "currency": "MXN",
+        "description": "Pago en Oxxo",
+        "category": "Entretenimiento",
+        "status": "Completado",
+        "paymentMethod": "SPEI",
+        "merchant": "Oxxo",
+        "merchantname": "Oxxo",
+        "location": {
+            "city": "Ciudad de México",
+            "state": "CDMX",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "entretenimiento",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_b94e081f",
+            "customerId": "customer_67890"
+        },
+        "mcc": "7832",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-18T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 49,
+        "categoryHierarchy": [
+            "Entretenimiento",
+            "Entretenimiento General"
+        ]
+    },
+    {
+        "id": "txn_006",
+        "customerId": "customer_67890",
+        "date": "2026-04-09T00:00:00Z",
+        "amoutn": 860.03,
+        "currency": "MXN",
+        "description": "Pago en Rappi",
+        "category": "Entretenimiento",
+        "status": "Completado",
+        "paymentMethod": "Tarjeta de Crédito",
+        "merchant": "Rappi",
+        "merchantname": "Rappi",
+        "location": {
+            "city": "Guadalajara",
+            "state": "Jalisco",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "entretenimiento",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_95fdf964",
+            "customerId": "customer_67890"
+        },
+        "mcc": "7832",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-12T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 41,
+        "categoryHierarchy": [
+            "Entretenimiento",
+            "Entretenimiento General"
+        ]
+    },
+    {
+        "id": "txn_007",
+        "customerId": "customer_67890",
+        "date": "2026-04-14T00:00:00Z",
+        "amoutn": 1565.68,
+        "currency": "MXN",
+        "description": "Pago en Soriana",
+        "category": "Servicios",
+        "status": "Completado",
+        "paymentMethod": "Tarjeta de Débito",
+        "merchant": "Soriana",
+        "merchantname": "Soriana",
+        "location": {
+            "city": "Puebla",
+            "state": "Puebla",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "servicios",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_3d4d4ae7",
+            "customerId": "customer_67890"
+        },
+        "mcc": "4899",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-16T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 14,
+        "categoryHierarchy": [
+            "Servicios",
+            "Servicios General"
+        ]
+    },
+    {
+        "id": "txn_008",
+        "customerId": "customer_67890",
+        "date": "2026-04-08T00:00:00Z",
+        "amoutn": 519.84,
+        "currency": "MXN",
+        "description": "Pago en Rappi",
+        "category": "Ropa",
+        "status": "Completado",
+        "paymentMethod": "Transferencia",
+        "merchant": "Rappi",
+        "merchantname": "Rappi",
+        "location": {
+            "city": "Guadalajara",
+            "state": "Jalisco",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "ropa",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_0da0f390",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5651",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-10T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 16,
+        "categoryHierarchy": [
+            "Ropa",
+            "Ropa General"
+        ]
+    },
+    {
+        "id": "txn_009",
+        "customerId": "customer_67890",
+        "date": "2026-04-09T00:00:00Z",
+        "amoutn": 1031.72,
+        "currency": "MXN",
+        "description": "Pago en Cinemex",
+        "category": "Supermercado",
+        "status": "Completado",
+        "paymentMethod": "Tarjeta de Crédito",
+        "merchant": "Cinemex",
+        "merchantname": "Cinemex",
+        "location": {
+            "city": "Ciudad de México",
+            "state": "CDMX",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "supermercado",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_cf49ccff",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5411",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-12T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 11,
+        "categoryHierarchy": [
+            "Supermercado",
+            "Supermercado General"
+        ]
+    },
+    {
+        "id": "txn_010",
+        "customerId": "customer_67890",
+        "date": "2026-04-06T00:00:00Z",
+        "amoutn": 1934.34,
+        "currency": "MXN",
+        "description": "Pago en Rappi",
+        "category": "Gasolina",
+        "status": "Completado",
+        "paymentMethod": "Tarjeta de Crédito",
+        "merchant": "Rappi",
+        "merchantname": "Rappi",
+        "location": {
+            "city": "Monterrey",
+            "state": "Nuevo León",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "gasolina",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_9cbe30c0",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5541",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-09T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 41,
+        "categoryHierarchy": [
+            "Gasolina",
+            "Gasolina General"
+        ]
+    },
+    {
+        "id": "txn_011",
+        "customerId": "customer_67890",
+        "date": "2026-04-04T00:00:00Z",
+        "amoutn": 1332.49,
+        "currency": "MXN",
+        "description": "Pago en Rappi",
+        "category": "Farmacia",
+        "status": "Completado",
+        "paymentMethod": "Tarjeta de Débito",
+        "merchant": "Rappi",
+        "merchantname": "Rappi",
+        "location": {
+            "city": "Ciudad de México",
+            "state": "CDMX",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "farmacia",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_54562237",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5912",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-05T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 44,
+        "categoryHierarchy": [
+            "Farmacia",
+            "Farmacia General"
+        ]
+    },
+    {
+        "id": "txn_012",
+        "customerId": "customer_67890",
+        "date": "2026-04-11T00:00:00Z",
+        "amoutn": 920.73,
+        "currency": "MXN",
+        "description": "Pago en Oxxo",
+        "category": "Transporte",
+        "status": "Completado",
+        "paymentMethod": "SPEI",
+        "merchant": "Oxxo",
+        "merchantname": "Oxxo",
+        "location": {
+            "city": "Puebla",
+            "state": "Puebla",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "transporte",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_f962a422",
+            "customerId": "customer_67890"
+        },
+        "mcc": "4111",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-12T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 17,
+        "categoryHierarchy": [
+            "Transporte",
+            "Transporte General"
+        ]
+    },
+    {
+        "id": "txn_013",
+        "customerId": "customer_67890",
+        "date": "2026-04-11T00:00:00Z",
+        "amoutn": 551.75,
+        "currency": "MXN",
+        "description": "Pago en Farmacias Guadalajara",
+        "category": "Ropa",
+        "status": "Completado",
+        "paymentMethod": "Tarjeta de Débito",
+        "merchant": "Farmacias Guadalajara",
+        "merchantname": "Farmacias Guadalajara",
+        "location": {
+            "city": "Querétaro",
+            "state": "Querétaro",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "ropa",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_566ebea3",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5651",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-14T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 23,
+        "categoryHierarchy": [
+            "Ropa",
+            "Ropa General"
+        ]
+    },
+    {
+        "id": "txn_014",
+        "customerId": "customer_67890",
+        "date": "2026-04-15T00:00:00Z",
+        "amoutn": 1623.36,
+        "currency": "MXN",
+        "description": "Pago en Soriana",
+        "category": "Supermercado",
+        "status": "Completado",
+        "paymentMethod": "SPEI",
+        "merchant": "Soriana",
+        "merchantname": "Soriana",
+        "location": {
+            "city": "Guadalajara",
+            "state": "Jalisco",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "supermercado",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_336554c4",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5411",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-16T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 38,
+        "categoryHierarchy": [
+            "Supermercado",
+            "Supermercado General"
+        ]
+    },
+    {
+        "id": "txn_015",
+        "customerId": "customer_67890",
+        "date": "2026-04-04T00:00:00Z",
+        "amoutn": 658.54,
+        "currency": "MXN",
+        "description": "Pago en Farmacias Guadalajara",
+        "category": "Entretenimiento",
+        "status": "Completado",
+        "paymentMethod": "Transferencia",
+        "merchant": "Farmacias Guadalajara",
+        "merchantname": "Farmacias Guadalajara",
+        "location": {
+            "city": "Guadalajara",
+            "state": "Jalisco",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "entretenimiento",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_93970fae",
+            "customerId": "customer_67890"
+        },
+        "mcc": "7832",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-06T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 3,
+        "categoryHierarchy": [
+            "Entretenimiento",
+            "Entretenimiento General"
+        ]
+    },
+    {
+        "id": "txn_016",
+        "customerId": "customer_67890",
+        "date": "2026-04-25T00:00:00Z",
+        "amoutn": 669.05,
+        "currency": "MXN",
+        "description": "Pago en Farmacias Guadalajara",
+        "category": "Restaurante",
+        "status": "Completado",
+        "paymentMethod": "Tarjeta de Débito",
+        "merchant": "Farmacias Guadalajara",
+        "merchantname": "Farmacias Guadalajara",
+        "location": {
+            "city": "Ciudad de México",
+            "state": "CDMX",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "restaurante",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_3f9e2cc3",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5812",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-26T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 27,
+        "categoryHierarchy": [
+            "Restaurante",
+            "Restaurante General"
+        ]
+    },
+    {
+        "id": "txn_017",
+        "customerId": "customer_67890",
+        "date": "2026-04-22T00:00:00Z",
+        "amoutn": 1310.33,
+        "currency": "MXN",
+        "description": "Pago en Cinemex",
+        "category": "Supermercado",
+        "status": "Completado",
+        "paymentMethod": "SPEI",
+        "merchant": "Cinemex",
+        "merchantname": "Cinemex",
+        "location": {
+            "city": "Querétaro",
+            "state": "Querétaro",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "supermercado",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_cb654ece",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5411",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-23T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 17,
+        "categoryHierarchy": [
+            "Supermercado",
+            "Supermercado General"
+        ]
+    },
+    {
+        "id": "txn_018",
+        "customerId": "customer_67890",
+        "date": "2026-04-19T00:00:00Z",
+        "amoutn": 2053.51,
+        "currency": "MXN",
+        "description": "Pago en Soriana",
+        "category": "Farmacia",
+        "status": "Completado",
+        "paymentMethod": "Tarjeta de Crédito",
+        "merchant": "Soriana",
+        "merchantname": "Soriana",
+        "location": {
+            "city": "Ciudad de México",
+            "state": "CDMX",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "farmacia",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_80a4184e",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5912",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-22T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 30,
+        "categoryHierarchy": [
+            "Farmacia",
+            "Farmacia General"
+        ]
+    },
+    {
+        "id": "txn_019",
+        "customerId": "customer_67890",
+        "date": "2026-04-28T00:00:00Z",
+        "amoutn": 590.78,
+        "currency": "MXN",
+        "description": "Pago en Starbucks",
+        "category": "Ropa",
+        "status": "Completado",
+        "paymentMethod": "Tarjeta de Crédito",
+        "merchant": "Starbucks",
+        "merchantname": "Starbucks",
+        "location": {
+            "city": "Guadalajara",
+            "state": "Jalisco",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "ropa",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_9fe9fb54",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5651",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-05-01T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 46,
+        "categoryHierarchy": [
+            "Ropa",
+            "Ropa General"
+        ]
+    },
+    {
+        "id": "txn_020",
+        "customerId": "customer_67890",
+        "date": "2026-04-27T00:00:00Z",
+        "amoutn": 1127.24,
+        "currency": "MXN",
+        "description": "Pago en Chedraui",
+        "category": "Ropa",
+        "status": "Completado",
+        "paymentMethod": "Transferencia",
+        "merchant": "Chedraui",
+        "merchantname": "Chedraui",
+        "location": {
+            "city": "Ciudad de México",
+            "state": "CDMX",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "ropa",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_06c37d79",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5651",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-28T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 27,
+        "categoryHierarchy": [
+            "Ropa",
+            "Ropa General"
+        ]
+    },
+    {
+        "id": "txn_021",
+        "customerId": "customer_67890",
+        "date": "2026-04-06T00:00:00Z",
+        "amoutn": 346.27,
+        "currency": "MXN",
+        "description": "Pago en Walmart",
+        "category": "Farmacia",
+        "status": "Completado",
+        "paymentMethod": "SPEI",
+        "merchant": "Walmart",
+        "merchantname": "Walmart",
+        "location": {
+            "city": "Ciudad de México",
+            "state": "CDMX",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "farmacia",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_c28e65bd",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5912",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-07T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 43,
+        "categoryHierarchy": [
+            "Farmacia",
+            "Farmacia General"
+        ]
+    },
+    {
+        "id": "txn_022",
+        "customerId": "customer_67890",
+        "date": "2026-04-09T00:00:00Z",
+        "amoutn": 188.5,
+        "currency": "MXN",
+        "description": "Pago en Uber",
+        "category": "Supermercado",
+        "status": "Completado",
+        "paymentMethod": "Tarjeta de Débito",
+        "merchant": "Uber",
+        "merchantname": "Uber",
+        "location": {
+            "city": "Querétaro",
+            "state": "Querétaro",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "supermercado",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_28837b2e",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5411",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-10T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 9,
+        "categoryHierarchy": [
+            "Supermercado",
+            "Supermercado General"
+        ]
+    },
+    {
+        "id": "txn_023",
+        "customerId": "customer_67890",
+        "date": "2026-04-23T00:00:00Z",
+        "amoutn": 2282.61,
+        "currency": "MXN",
+        "description": "Pago en Rappi",
+        "category": "Gasolina",
+        "status": "Completado",
+        "paymentMethod": "Tarjeta de Crédito",
+        "merchant": "Rappi",
+        "merchantname": "Rappi",
+        "location": {
+            "city": "Querétaro",
+            "state": "Querétaro",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "gasolina",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_02487a00",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5541",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-25T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 41,
+        "categoryHierarchy": [
+            "Gasolina",
+            "Gasolina General"
+        ]
+    },
+    {
+        "id": "txn_024",
+        "customerId": "customer_67890",
+        "date": "2026-04-02T00:00:00Z",
+        "amoutn": 1828.06,
+        "currency": "MXN",
+        "description": "Pago en Soriana",
+        "category": "Ropa",
+        "status": "Completado",
+        "paymentMethod": "Tarjeta de Crédito",
+        "merchant": "Soriana",
+        "merchantname": "Soriana",
+        "location": {
+            "city": "Puebla",
+            "state": "Puebla",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "ropa",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_76de721f",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5651",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-04T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 13,
+        "categoryHierarchy": [
+            "Ropa",
+            "Ropa General"
+        ]
+    },
+    {
+        "id": "txn_025",
+        "customerId": "customer_67890",
+        "date": "2026-04-07T00:00:00Z",
+        "amoutn": 1849.56,
+        "currency": "MXN",
+        "description": "Pago en Rappi",
+        "category": "Entretenimiento",
+        "status": "Completado",
+        "paymentMethod": "Tarjeta de Crédito",
+        "merchant": "Rappi",
+        "merchantname": "Rappi",
+        "location": {
+            "city": "Ciudad de México",
+            "state": "CDMX",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "entretenimiento",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_cfb69b30",
+            "customerId": "customer_67890"
+        },
+        "mcc": "7832",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-09T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 19,
+        "categoryHierarchy": [
+            "Entretenimiento",
+            "Entretenimiento General"
+        ]
+    },
+    {
+        "id": "txn_026",
+        "customerId": "customer_67890",
+        "date": "2026-04-18T00:00:00Z",
+        "amoutn": 2094.32,
+        "currency": "MXN",
+        "description": "Pago en Liverpool",
+        "category": "Ropa",
+        "status": "Completado",
+        "paymentMethod": "Transferencia",
+        "merchant": "Liverpool",
+        "merchantname": "Liverpool",
+        "location": {
+            "city": "Guadalajara",
+            "state": "Jalisco",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "ropa",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_bcc74bd5",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5651",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-21T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 8,
+        "categoryHierarchy": [
+            "Ropa",
+            "Ropa General"
+        ]
+    },
+    {
+        "id": "txn_027",
+        "customerId": "customer_67890",
+        "date": "2026-04-02T00:00:00Z",
+        "amoutn": 1668.54,
+        "currency": "MXN",
+        "description": "Pago en Farmacias Guadalajara",
+        "category": "Entretenimiento",
+        "status": "Completado",
+        "paymentMethod": "Tarjeta de Crédito",
+        "merchant": "Farmacias Guadalajara",
+        "merchantname": "Farmacias Guadalajara",
+        "location": {
+            "city": "Monterrey",
+            "state": "Nuevo León",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "entretenimiento",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_133346f1",
+            "customerId": "customer_67890"
+        },
+        "mcc": "7832",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-03T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 12,
+        "categoryHierarchy": [
+            "Entretenimiento",
+            "Entretenimiento General"
+        ]
+    },
+    {
+        "id": "txn_028",
+        "customerId": "customer_67890",
+        "date": "2026-04-02T00:00:00Z",
+        "amoutn": 2177.12,
+        "currency": "MXN",
+        "description": "Pago en Liverpool",
+        "category": "Restaurante",
+        "status": "Completado",
+        "paymentMethod": "Tarjeta de Crédito",
+        "merchant": "Liverpool",
+        "merchantname": "Liverpool",
+        "location": {
+            "city": "Puebla",
+            "state": "Puebla",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "restaurante",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_febd57be",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5812",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-03T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 37,
+        "categoryHierarchy": [
+            "Restaurante",
+            "Restaurante General"
+        ]
+    },
+    {
+        "id": "txn_029",
+        "customerId": "customer_67890",
+        "date": "2026-04-07T00:00:00Z",
+        "amoutn": 684.49,
+        "currency": "MXN",
+        "description": "Pago en Uber",
+        "category": "Transporte",
+        "status": "Completado",
+        "paymentMethod": "Tarjeta de Débito",
+        "merchant": "Uber",
+        "merchantname": "Uber",
+        "location": {
+            "city": "Monterrey",
+            "state": "Nuevo León",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "transporte",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_e7b1eb4c",
+            "customerId": "customer_67890"
+        },
+        "mcc": "4111",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-10T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 1,
+        "categoryHierarchy": [
+            "Transporte",
+            "Transporte General"
+        ]
+    },
+    {
+        "id": "txn_030",
+        "customerId": "customer_67890",
+        "date": "2026-04-05T00:00:00Z",
+        "amoutn": 2019.01,
+        "currency": "MXN",
+        "description": "Pago en Costco",
+        "category": "Ropa",
+        "status": "Completado",
+        "paymentMethod": "SPEI",
+        "merchant": "Costco",
+        "merchantname": "Costco",
+        "location": {
+            "city": "Ciudad de México",
+            "state": "CDMX",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "ropa",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_1100b0bd",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5651",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-07T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 13,
+        "categoryHierarchy": [
+            "Ropa",
+            "Ropa General"
+        ]
+    },
+    {
+        "id": "txn_031",
+        "customerId": "customer_67890",
+        "date": "2026-04-02T00:00:00Z",
+        "amoutn": 1103.53,
+        "currency": "MXN",
+        "description": "Pago en Cinemex",
+        "category": "Servicios",
+        "status": "Completado",
+        "paymentMethod": "Transferencia",
+        "merchant": "Cinemex",
+        "merchantname": "Cinemex",
+        "location": {
+            "city": "Puebla",
+            "state": "Puebla",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "servicios",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_cda116da",
+            "customerId": "customer_67890"
+        },
+        "mcc": "4899",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-05T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 17,
+        "categoryHierarchy": [
+            "Servicios",
+            "Servicios General"
+        ]
+    },
+    {
+        "id": "txn_032",
+        "customerId": "customer_67890",
+        "date": "2026-04-22T00:00:00Z",
+        "amoutn": 2242.89,
+        "currency": "MXN",
+        "description": "Pago en Rappi",
+        "category": "Transporte",
+        "status": "Completado",
+        "paymentMethod": "Tarjeta de Débito",
+        "merchant": "Rappi",
+        "merchantname": "Rappi",
+        "location": {
+            "city": "Ciudad de México",
+            "state": "CDMX",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "transporte",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_50e71992",
+            "customerId": "customer_67890"
+        },
+        "mcc": "4111",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-24T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 49,
+        "categoryHierarchy": [
+            "Transporte",
+            "Transporte General"
+        ]
+    },
+    {
+        "id": "txn_033",
+        "customerId": "customer_67890",
+        "date": "2026-04-12T00:00:00Z",
+        "amoutn": 309.18,
+        "currency": "MXN",
+        "description": "Pago en Costco",
+        "category": "Entretenimiento",
+        "status": "Completado",
+        "paymentMethod": "Transferencia",
+        "merchant": "Costco",
+        "merchantname": "Costco",
+        "location": {
+            "city": "Monterrey",
+            "state": "Nuevo León",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "entretenimiento",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_19366185",
+            "customerId": "customer_67890"
+        },
+        "mcc": "7832",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-14T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 41,
+        "categoryHierarchy": [
+            "Entretenimiento",
+            "Entretenimiento General"
+        ]
+    },
+    {
+        "id": "txn_034",
+        "customerId": "customer_67890",
+        "date": "2026-04-05T00:00:00Z",
+        "amoutn": 1916.1,
+        "currency": "MXN",
+        "description": "Pago en Oxxo",
+        "category": "Supermercado",
+        "status": "Completado",
+        "paymentMethod": "Tarjeta de Débito",
+        "merchant": "Oxxo",
+        "merchantname": "Oxxo",
+        "location": {
+            "city": "Querétaro",
+            "state": "Querétaro",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "supermercado",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_4c720680",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5411",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-08T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 38,
+        "categoryHierarchy": [
+            "Supermercado",
+            "Supermercado General"
+        ]
+    },
+    {
+        "id": "txn_035",
+        "customerId": "customer_67890",
+        "date": "2026-04-02T00:00:00Z",
+        "amoutn": 2438.96,
+        "currency": "MXN",
+        "description": "Pago en The Home Depot",
+        "category": "Transporte",
+        "status": "Completado",
+        "paymentMethod": "SPEI",
+        "merchant": "The Home Depot",
+        "merchantname": "The Home Depot",
+        "location": {
+            "city": "Monterrey",
+            "state": "Nuevo León",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "transporte",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_9d8681ab",
+            "customerId": "customer_67890"
+        },
+        "mcc": "4111",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-05T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 8,
+        "categoryHierarchy": [
+            "Transporte",
+            "Transporte General"
+        ]
+    },
+    {
+        "id": "txn_036",
+        "customerId": "customer_67890",
+        "date": "2026-04-08T00:00:00Z",
+        "amoutn": 1850.1,
+        "currency": "MXN",
+        "description": "Pago en Cinemex",
+        "category": "Supermercado",
+        "status": "Completado",
+        "paymentMethod": "Transferencia",
+        "merchant": "Cinemex",
+        "merchantname": "Cinemex",
+        "location": {
+            "city": "Guadalajara",
+            "state": "Jalisco",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "supermercado",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_5ae3eabe",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5411",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-10T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 11,
+        "categoryHierarchy": [
+            "Supermercado",
+            "Supermercado General"
+        ]
+    },
+    {
+        "id": "txn_037",
+        "customerId": "customer_67890",
+        "date": "2026-04-10T00:00:00Z",
+        "amoutn": 1740.81,
+        "currency": "MXN",
+        "description": "Pago en The Home Depot",
+        "category": "Gasolina",
+        "status": "Completado",
+        "paymentMethod": "SPEI",
+        "merchant": "The Home Depot",
+        "merchantname": "The Home Depot",
+        "location": {
+            "city": "Monterrey",
+            "state": "Nuevo León",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "gasolina",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_afdfa651",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5541",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-13T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 13,
+        "categoryHierarchy": [
+            "Gasolina",
+            "Gasolina General"
+        ]
+    },
+    {
+        "id": "txn_038",
+        "customerId": "customer_67890",
+        "date": "2026-04-21T00:00:00Z",
+        "amoutn": 1339.67,
+        "currency": "MXN",
+        "description": "Pago en Rappi",
+        "category": "Entretenimiento",
+        "status": "Completado",
+        "paymentMethod": "Transferencia",
+        "merchant": "Rappi",
+        "merchantname": "Rappi",
+        "location": {
+            "city": "Ciudad de México",
+            "state": "CDMX",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "entretenimiento",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_43e73aae",
+            "customerId": "customer_67890"
+        },
+        "mcc": "7832",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-23T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 48,
+        "categoryHierarchy": [
+            "Entretenimiento",
+            "Entretenimiento General"
+        ]
+    },
+    {
+        "id": "txn_039",
+        "customerId": "customer_67890",
+        "date": "2026-04-15T00:00:00Z",
+        "amoutn": 187.81,
+        "currency": "MXN",
+        "description": "Pago en The Home Depot",
+        "category": "Farmacia",
+        "status": "Completado",
+        "paymentMethod": "Tarjeta de Crédito",
+        "merchant": "The Home Depot",
+        "merchantname": "The Home Depot",
+        "location": {
+            "city": "Puebla",
+            "state": "Puebla",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "farmacia",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_2b404273",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5912",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-16T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 26,
+        "categoryHierarchy": [
+            "Farmacia",
+            "Farmacia General"
+        ]
+    },
+    {
+        "id": "txn_040",
+        "customerId": "customer_67890",
+        "date": "2026-04-24T00:00:00Z",
+        "amoutn": 94.71,
+        "currency": "MXN",
+        "description": "Pago en Costco",
+        "category": "Farmacia",
+        "status": "Completado",
+        "paymentMethod": "Tarjeta de Crédito",
+        "merchant": "Costco",
+        "merchantname": "Costco",
+        "location": {
+            "city": "Monterrey",
+            "state": "Nuevo León",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "farmacia",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_16b47c36",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5912",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-26T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 41,
+        "categoryHierarchy": [
+            "Farmacia",
+            "Farmacia General"
+        ]
+    },
+    {
+        "id": "txn_041",
+        "customerId": "customer_67890",
+        "date": "2026-04-10T00:00:00Z",
+        "amoutn": 2262.07,
+        "currency": "MXN",
+        "description": "Pago en Costco",
+        "category": "Restaurante",
+        "status": "Completado",
+        "paymentMethod": "SPEI",
+        "merchant": "Costco",
+        "merchantname": "Costco",
+        "location": {
+            "city": "Monterrey",
+            "state": "Nuevo León",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "restaurante",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_6115cf4c",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5812",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-13T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 36,
+        "categoryHierarchy": [
+            "Restaurante",
+            "Restaurante General"
+        ]
+    },
+    {
+        "id": "txn_042",
+        "customerId": "customer_67890",
+        "date": "2026-04-19T00:00:00Z",
+        "amoutn": 1581.64,
+        "currency": "MXN",
+        "description": "Pago en Starbucks",
+        "category": "Farmacia",
+        "status": "Completado",
+        "paymentMethod": "Tarjeta de Débito",
+        "merchant": "Starbucks",
+        "merchantname": "Starbucks",
+        "location": {
+            "city": "Monterrey",
+            "state": "Nuevo León",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "farmacia",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_c04f72a3",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5912",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-22T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 13,
+        "categoryHierarchy": [
+            "Farmacia",
+            "Farmacia General"
+        ]
+    },
+    {
+        "id": "txn_043",
+        "customerId": "customer_67890",
+        "date": "2026-04-08T00:00:00Z",
+        "amoutn": 2412.35,
+        "currency": "MXN",
+        "description": "Pago en Starbucks",
+        "category": "Gasolina",
+        "status": "Completado",
+        "paymentMethod": "Tarjeta de Débito",
+        "merchant": "Starbucks",
+        "merchantname": "Starbucks",
+        "location": {
+            "city": "Ciudad de México",
+            "state": "CDMX",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "gasolina",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_0da73f11",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5541",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-09T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 41,
+        "categoryHierarchy": [
+            "Gasolina",
+            "Gasolina General"
+        ]
+    },
+    {
+        "id": "txn_044",
+        "customerId": "customer_67890",
+        "date": "2026-04-08T00:00:00Z",
+        "amoutn": 1476.05,
+        "currency": "MXN",
+        "description": "Pago en The Home Depot",
+        "category": "Entretenimiento",
+        "status": "Completado",
+        "paymentMethod": "Tarjeta de Débito",
+        "merchant": "The Home Depot",
+        "merchantname": "The Home Depot",
+        "location": {
+            "city": "Monterrey",
+            "state": "Nuevo León",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "entretenimiento",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_b2a7ca85",
+            "customerId": "customer_67890"
+        },
+        "mcc": "7832",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-09T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 49,
+        "categoryHierarchy": [
+            "Entretenimiento",
+            "Entretenimiento General"
+        ]
+    },
+    {
+        "id": "txn_045",
+        "customerId": "customer_67890",
+        "date": "2026-04-09T00:00:00Z",
+        "amoutn": 1311.02,
+        "currency": "MXN",
+        "description": "Pago en Farmacias Guadalajara",
+        "category": "Supermercado",
+        "status": "Completado",
+        "paymentMethod": "Transferencia",
+        "merchant": "Farmacias Guadalajara",
+        "merchantname": "Farmacias Guadalajara",
+        "location": {
+            "city": "Puebla",
+            "state": "Puebla",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "supermercado",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_a5ab034f",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5411",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-11T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 46,
+        "categoryHierarchy": [
+            "Supermercado",
+            "Supermercado General"
+        ]
+    },
+    {
+        "id": "txn_046",
+        "customerId": "customer_67890",
+        "date": "2026-04-23T00:00:00Z",
+        "amoutn": 2233.13,
+        "currency": "MXN",
+        "description": "Pago en Soriana",
+        "category": "Servicios",
+        "status": "Completado",
+        "paymentMethod": "Tarjeta de Crédito",
+        "merchant": "Soriana",
+        "merchantname": "Soriana",
+        "location": {
+            "city": "Querétaro",
+            "state": "Querétaro",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "servicios",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_c0027b5e",
+            "customerId": "customer_67890"
+        },
+        "mcc": "4899",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-26T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 13,
+        "categoryHierarchy": [
+            "Servicios",
+            "Servicios General"
+        ]
+    },
+    {
+        "id": "txn_047",
+        "customerId": "customer_67890",
+        "date": "2026-04-01T00:00:00Z",
+        "amoutn": 1931.2,
+        "currency": "MXN",
+        "description": "Pago en Farmacias Guadalajara",
+        "category": "Servicios",
+        "status": "Completado",
+        "paymentMethod": "Tarjeta de Crédito",
+        "merchant": "Farmacias Guadalajara",
+        "merchantname": "Farmacias Guadalajara",
+        "location": {
+            "city": "Monterrey",
+            "state": "Nuevo León",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "servicios",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_677e5525",
+            "customerId": "customer_67890"
+        },
+        "mcc": "4899",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-02T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 29,
+        "categoryHierarchy": [
+            "Servicios",
+            "Servicios General"
+        ]
+    },
+    {
+        "id": "txn_048",
+        "customerId": "customer_67890",
+        "date": "2026-04-23T00:00:00Z",
+        "amoutn": 1792.96,
+        "currency": "MXN",
+        "description": "Pago en Oxxo",
+        "category": "Gasolina",
+        "status": "Completado",
+        "paymentMethod": "Tarjeta de Débito",
+        "merchant": "Oxxo",
+        "merchantname": "Oxxo",
+        "location": {
+            "city": "Guadalajara",
+            "state": "Jalisco",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "gasolina",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_4600bc4f",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5541",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-25T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 41,
+        "categoryHierarchy": [
+            "Gasolina",
+            "Gasolina General"
+        ]
+    },
+    {
+        "id": "txn_049",
+        "customerId": "customer_67890",
+        "date": "2026-04-22T00:00:00Z",
+        "amoutn": 110.18,
+        "currency": "MXN",
+        "description": "Pago en Oxxo",
+        "category": "Farmacia",
+        "status": "Completado",
+        "paymentMethod": "SPEI",
+        "merchant": "Oxxo",
+        "merchantname": "Oxxo",
+        "location": {
+            "city": "Puebla",
+            "state": "Puebla",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "farmacia",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_6198d9dd",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5912",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-23T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 28,
+        "categoryHierarchy": [
+            "Farmacia",
+            "Farmacia General"
+        ]
+    },
+    {
+        "id": "txn_050",
+        "customerId": "customer_67890",
+        "date": "2026-04-21T00:00:00Z",
+        "amoutn": 1221.57,
+        "currency": "MXN",
+        "description": "Pago en Rappi",
+        "category": "Ropa",
+        "status": "Completado",
+        "paymentMethod": "Transferencia",
+        "merchant": "Rappi",
+        "merchantname": "Rappi",
+        "location": {
+            "city": "Ciudad de México",
+            "state": "CDMX",
+            "country": "México"
+        },
+        "tags": [
+            "pago",
+            "ropa",
+            "mxn"
+        ],
+        "metadata": {
+            "orderId": "order_5c8fbf01",
+            "customerId": "customer_67890"
+        },
+        "mcc": "5651",
+        "isFraudulent": false,
+        "exchangeRate": 1.0,
+        "settlementDate": "2026-04-23T00:00:00Z",
+        "recurring": false,
+        "installmentCount": 1,
+        "originalTransactionId": null,
+        "cashbackAmount": 0.0,
+        "rewardsPoints": 48,
+        "categoryHierarchy": [
+            "Ropa",
+            "Ropa General"
+        ]
+    }
+]);
